@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONLINE FOOD ORDERING SYSTEM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--THIS IS NAV BAR-->
+    <nav id="navbar">
+      <div id="logo">
+        <img src="/images/logo.png" alt="MyOnlineMeal.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#services-container">Services</a></li>
+        <li class="item"><a href="#Deal-of-the-day">Deal Of The Day</a></li>
+        <li class="item"><a href="#contact">Contact Us </a></li>
+      </ul>
+    </nav>
+
+    <!--HOME PAGE-->
+    <section id="home">
+      <h1 class="h-primary">Welcome to MyOnlineMeal</h1>
+      <p>We Deliver Good Quality Food With</p>
+      <p>Great Service TO Our Customers</p>
+    </section>
+
+    <!--THIS IS SEVICE PAGE-->
+    <section id="services-container">
+      <h1 class="h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="/images/card1.jpeg" alt="" />
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center">
+            We Provide Food ordering services click On The Order Button
+          </p>
+          <button class="button"><a href="#order">Order Now</a></button>
+        </div>
+        <div class="box">
+          <img src="/images/card3.jpeg" alt="" />
+          <h2 class="h-secondary center">Catering</h2>
+          <p class="center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <button class="button"><a href="#reserve"> Book Now</a></button>
+        </div>
+        <div class="box">
+          <img src="/images/card2.jpg" alt="" />
+          <h2 class="h-secondary center">Bulk Ordering</h2>
+          <p class="center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet,
+            reiciendis.
+          </p>
+          <button class="button"><a href="#reserve"> Contact Us</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!--THIS IS DEAL OF THE DAY-->
+    <section id="Deal-of-the-day">
+      <h1 class="h-primary center">Deal Of The Day!</h1>
+      <div id="deal">
+        <div class="deal-item">
+          <img src="/images/deal1.jpeg" alt="Our Client" />
+        </div>
+        <div class="deal-item">
+          <img src="/images/deal2.jpeg" alt="Our Client" />
+        </div>
+      </div>
+    </section>
+
+    <!--THIS IS CONTACT US PAGE-->
+    <section id="contact">
+      <h1 class="h-primary center">Contact Us</h1>
+      <div id="contact-box">
+        <form action="contact">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="name"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="phone">Phone Number: </label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              minlength="30"
+            ></textarea>
+          </div>
+          <div>
+            <button class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
